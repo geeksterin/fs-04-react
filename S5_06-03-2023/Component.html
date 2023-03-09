@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel"> 
+
+        
+        
+              function CreateButton(obj){  // obj = {name:"React",title:"ReactJS"}
+              
+
+               return <div> <h2>{obj.title} </h2><button>{obj.name}</button>  </div>
+                  
+              }
+                
+
+                  function main(){
+
+                        return <div> 
+                              <CreateButton name="React" title="ReactJS" />
+
+                              <CreateButton  name="Angular" title="Google"> </CreateButton>
+
+                              <CreateButton  name="Css" title="CSS"> </CreateButton>
+
+                              <CreateButton  name="Html" title="HTML"> </CreateButton>
+                            </div>
+                  }
+
+              ReactDOM.render(main(),document.getElementById('root'))
+        
+        
+        </script>
+</body>
+</html>

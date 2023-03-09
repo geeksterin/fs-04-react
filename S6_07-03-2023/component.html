@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel">
+        // React component 
+           function CreateUI(){
+             return <div> 
+                  <h2>React Component</h2> 
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae beatae temporibus aut minus saepe at aspernatur! Facilis tempora et ratione delectus excepturi nobis placeat temporibus praesentium aliquam. Obcaecati amet vitae commodi, nulla eum neque molestiae asperiores soluta illum, at deserunt temporibus totam facere dolorem itaque vel eligendi explicabo omnis?</p>
+                </div>
+           }
+
+           function List(){
+            return <div>  
+                  <ol> <li>React </li> <li>Angular </li> <li>Java </li> </ol>
+                </div>
+           }
+
+             function App(){
+                return <div> 
+                     <CreateUI />  
+                     <List /> 
+                     <CreateUI />  
+                     <CreateUI />  
+                     <List /> 
+                    </div>
+             }
+
+             ReactDOM.render(<App />,document.getElementById('root'))
+        
+        
+        </script>
+</body>
+</html>

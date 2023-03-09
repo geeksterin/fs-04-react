@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Document</title>
+</head>
+<body>
+      <div id="root"></div>
+
+      <script>
+        let div= React.createElement('div',null,[
+     React.createElement('div',null,React.createElement('h2',null,"React JS with Kabir")),
+     React.createElement('div',null,React.createElement('p',null,"React is very very easy with React.CreateElement"))
+         ])
+
+         ReactDOM.render(div,document.getElementById('root'))
+      </script>
+</body>
+</html>

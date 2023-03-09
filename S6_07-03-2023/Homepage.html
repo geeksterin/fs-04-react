@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+
+        *{
+            margin: 0;
+        }
+
+    </style>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel"> 
+        function Header(){
+
+        return <div style={{backgroundColor:"green",height:"70px",color:"white",display:"flex"}}>  
+            <div style={{width:"40%",display:"flex",justifyContent:"center",alignItems:"center"}}> 
+                 <h2><i class="bi bi-balloon-heart-fill"></i>Geekster<i class="bi bi-balloon-heart-fill"></i></h2>
+                </div>
+            <div style={{width:"60%",display:"flex",justifyContent:"center",alignItems:"center"}}> 
+                 <a href="#" style={{color:"white",marginRight:"50px",textDecoration:"none"}}>Home </a>
+                 <a href="#" style={{color:"white",marginRight:"50px",textDecoration:"none"}}>Profile </a>
+                 <a href="#" style={{color:"white",marginRight:"50px",textDecoration:"none"}}>Products </a>
+                 <a href="#" style={{color:"white",marginRight:"50px",textDecoration:"none"}}>Support&nbsp;<i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+
+
+
+        }
+
+        function Main(){
+            return <div style={{height:"500px"}}>
+                         <div style={{display:"flex",height:"500px",padding:"30px",  flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
+                            <h1 style={{margin:"12px 0px"}}>React Developed by Facebook </h1>
+                            <p style={{margin:"12px 0px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus error voluptatibus veritatis placeat! Quasi laboriosam dolorum, fugit ratione odit nulla et fuga unde culpa mollitia, officia itaque a ipsam. Doloremque repellendus porro officia dolorem, repudiandae itaque asperiores voluptatibus nostrum dolores voluptas non labore dignissimos totam nisi quo nemo corrupti.</p>
+                            <button>Explore More </button>
+                            </div>
+                </div>
+        }
+
+        function Footer(){
+
+             return <div style={{height:"150px",padding:"50px",backgroundColor:"black",color:"white",textAlign:"center"}}>
+                    <h2>All rights are Reserved </h2> 
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo ex omnis tempora harum nobis quam natus corrupti eaque soluta quasi perferendis, non accusamus facere sapiente sequi! Nesciunt odio nostrum officia eius in fugit tempora quaerat nisi commodi molestias soluta accusamus delectus dolore magni beatae laboriosam quisquam pariatur facilis omnis eveniet saepe, sunt repellendus deleniti. Commodi facere officia illum soluta quasi asperiores dolorum ex nobis, velit, natus dolor doloribus explicabo maxime laudantium debitis quos ullam quam cupiditate ab, dignissimos atque ea. </p>
+                </div>
+        }
+          function App(){
+            //  Component rendered
+             return <div> 
+              
+                <Header /> 
+
+
+                 <Main />
+                 <Footer />
+                </div>
+          }
+        
+        ReactDOM.render(<App />,document.getElementById('root'))
+        
+        
+        </script>
+</body>
+</html>

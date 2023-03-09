@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel"> 
+        var cardStyle = {
+                  width:"300px",
+                 textAlign:"center",
+                  padding:"20px",
+                  boxShadow:"0 0 10px black"
+              }
+
+              function createCard(){
+              return  <div style={cardStyle}>  
+                       <img 
+                       width="100%"
+                       height="300"
+                       src="https://thumbs.dreamstime.com/z/healthcare-profession-stomatology-medicine-concept-smiling-male-young-dentist-over-medical-office-background-71960618.jpg" />
+                       <h2> Rahul Sharma </h2>
+                       <p>Software Developer</p>
+                    </div>
+
+              }
+
+              var container = <div style={{display:"flex",justifyContent:"space-evenly"}}>
+                 {createCard()}  
+                 {createCard()}
+                 {createCard()}
+                 </div>
+              
+
+                    ReactDOM.render(container,document.getElementById('root'))
+        
+        </script>
+</body>
+</html>
