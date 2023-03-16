@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    box-shadow: 0 0 10px black;
+    width: 900px;
+    margin:70px auto 20px;
+    height : 400px
+}
+.col1 {
+    
+    width:40%
+}
+.col2 {
+    padding:50px;
+    width: 60%;
+}
