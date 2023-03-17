@@ -1,0 +1,22 @@
+Deployment on Vercel
+------------------------------
+0. Create Account on Vercel platform
+     https://vercel.com/signup
+     
+1. install now globlaly 
+       npm i -g vercel
+
+
+
+2.run the command the following command
+     vercel 
+
+3.If not logged in, or if no account created you might be asked to. 
+once login and authentication is setup, the terminal will ask you a few questions to setup 
+and deploy
+
+4.Once that is over, it will show its ready and gives you a production link
+
+
+5.If you want to deploy it to a production build, then do 
+       vercel --prod
